@@ -1,0 +1,1359 @@
+@font-face {
+  font-family: "Kinetika Heavy2";
+  src: url("../fontes/Kastelov - Kinetika Ultra.otf");
+}
+@font-face {
+  font-family: "Kinetika Heavy3";
+  src: url("../fontes/Noto-Sans-ExtraBold/NotoSans-Medium.ttf");
+}
+@font-face {
+  font-family: "Kinetika Heavy4";
+  src: url("../fontes/kinetika-semi-bold.ttf");
+}
+@font-face {
+  font-family: "Kinetika Heavy5";
+  src: url("../fontes/kinetika-heavy.ttf");
+}
+@font-face {
+  font-family: "Number Fonte";
+  src: url("../fontes/Noto-Sans-ExtraBold/NotoSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Kinetika Heavy book";
+  src: url("../fontes/kinetika-regular.ttf");
+}
+
+body {
+  margin: 0%;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  height: 100vh; /* Altura total da viewport */
+  --degrade2: linear-gradient(to right,#138b75, #0e4c3e);
+}
+
+:root {
+  --degrade: linear-gradient(to right,#00bb99, #007e62);
+}
+
+.top {
+  background-image: var(--degrade);
+  height: 20.41%;
+}
+
+.topImagem {
+  width: 100%;
+}
+
+.setas {
+  text-align: center;
+}
+
+.imagemSeta {
+  position: absolute;
+  top: 72%;
+  left: 23%;
+  width: 50%;
+}
+
+.tituloSeta {
+  position: absolute;
+  font-family: "Kinetika Heavy2", Arial, sans-serif;
+  color: #ff8916;
+  font-size: 4.5rem;
+  top: 87%;
+  left: 33%;
+}
+
+/*Box de empregos*/
+.GridboxRoot {
+  height: 20%;
+  display: grid;
+  margin-top: 6%;
+  grid-template-rows: 340px 220px;
+}
+/*Box de empregos*/
+.GridboxRoot2 {
+  display: grid;
+  margin-top: 6%;
+  grid-template-rows: 340px 220px;
+}
+
+.boxRootMaiores {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 260px;
+}
+
+.boxMaior {
+  display: grid;
+  border-radius: 20px;
+  background-color: #efefef;
+  grid-template-columns: 380px;
+  grid-template-rows: 60px 60px 102px auto;
+}
+
+.boxRootMenor {
+  display: flex;
+  justify-content: space-evenly;
+  height: 210px;
+  margin-left: 11%;
+  margin-right: 11%;
+}
+
+.boxMenor {
+  display: grid;
+  grid-template-columns: 330px;
+  height: auto;
+  border-radius: 20px;
+  grid-template-rows: 60px 60px 55px auto;
+  background-color: #efefef;
+}
+
+.retanguloCidades {
+  background-color: #ff8916;
+  border-radius: 8px;
+  width: 90px;
+  height: 30px;
+}
+
+.retanguloCidadesVerde {
+  background-color: #00bb99;
+  border-radius: 8px;
+  width: 90px;
+  height: 30px;
+}
+
+.espasador {
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.textoRetanguloCidades {
+  font-family: "Kinetika Heavy3";
+  margin-top: 5px;
+  text-align: center;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.textoCirculoVerde {
+  font-family: "Number Fonte";
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-right: 4px;
+}
+
+.textoCirculoLaranja {
+  font-family: "Number Fonte";
+  text-align: center;
+  font-size: 4rem;
+  color: #ffffff;
+  margin-right: 4px;
+}
+
+.textoRetanguloVerde {
+  margin-top: 20px;
+  font-family: "Kinetika Heavy3";
+  text-align: center;
+  margin-left: 15%;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.textoRetanguloLaranja {
+  margin-left: 50px;
+  margin-top: 15px;
+  font-family: "Kinetika Heavy3";
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.textoBoxGrande {
+  font-family: "Kinetika Heavy3";
+  text-align: center;
+  margin-left: 8%;
+  margin-right: 8%;
+  font-size: 16px;
+  text-indent: 0.3em;
+  color: #808080;
+  height: 100px;
+  overflow: hidden;
+}
+
+.textoBoxPequena {
+  font-family: "Kinetika Heavy3";
+  text-align: center;
+  font-size: 14px;
+  margin-left: 7%;
+  margin-right: 7%;
+  text-indent: 0.3em;
+  color: #808080;
+  height: 37px;
+  overflow: hidden;
+}
+
+.circuloVerde {
+  position: absolute;
+  left: -1.5%;
+  width: 53px;
+  height: 53px;
+  background-color: #00bb99;
+  border-radius: 50%;
+  z-index: 2;
+}
+.circuloLaranja {
+  position: absolute;
+  top: -27%;
+  left: -3%;
+  width: 90px;
+  height: 90px;
+  background-color: #ff8916;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.retanguloLaranja {
+  position: relative;
+  width: 325px;
+  height: 52px;
+  margin-left: 4px;
+  background-color: #ff8916;
+  border-radius: 20px;
+}
+
+.retanguloVerde {
+  position: relative;
+  width: 400px;
+  height: 60px;
+  background-color: #00bb99;
+  border-radius: 20px;
+}
+
+/*Ver mais*/
+.orientacaoVerMais {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.botaoVerMais {
+  font-family: "Kinetika Heavy4";
+  font-size: 16px;
+  border: none;
+  width: 100px;
+}
+
+dialog {
+  position: fixed;
+  border: none;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #eff0ef;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 400px;
+  font-family: "Kinetika Heavy book";
+}
+
+dialog h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #ff8916;
+  padding: 10px;
+}
+
+dialog p {
+  text-align: center;
+  flex-grow: 1;
+}
+
+dialog button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font: arial;
+  background-color: #00bb99;
+  border: none;
+  border-radius: 5px;
+  width: 60px;
+  height: 20px;
+}
+
+/*Historia*/
+.topImagemLaranja {
+  width: 100%;
+  position: absolute;
+  height: 700px;
+}
+
+.imagemLaranja {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+  grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
+  width: 100%;
+  height: 700px;
+}
+
+.imagemDoHomem {
+  width: 100%;
+  z-index: 2;
+  margin-left: 38%;
+  margin-top: 10%;
+}
+
+.textoSobreposto {
+  color: #ffffff;
+  text-align: right;
+  z-index: 2;
+  margin-right: 20%;
+  margin-left: 15%;
+  margin-top: 6%;
+  text-indent: 1.5em;
+}
+
+.titulo {
+  font-family: "Kinetika Heavy2", Arial, sans-serif;
+  margin: 0%;
+  font-size: 65px;
+}
+
+.espaçamento {
+  font-size: 16px;
+  font-family: "Kinetika Heavy3";
+}
+
+/*Cadastro*/
+.cadastro {
+  display: grid;
+  background-color: #232323;
+  height: 22%;
+  overflow: hidden;
+}
+
+input::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+/*Titulo cadastro e subtitulo*/
+.tituloCadastro {
+  margin-top: 6%;
+  text-align: center;
+}
+
+.textoCadastro {
+  color: #ff8916;
+  font-size: 75px;
+  font-family: "Kinetika Heavy2", Arial, sans-serif;
+}
+
+.subcadCastro {
+  color: #ffffff;
+  font-size: 17px;
+  font-family: "Kinetika Heavy book";
+}
+
+/*Grid cadastro*/
+.tela-formulario {
+  display: grid;
+  grid-template-columns: 55% 50%;
+  color: #4f4e4f;
+  height: 100%;
+  font-family: "Kinetika Heavy book";
+}
+
+.imagemDaMulher {
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+/*Grid formulario*/
+.campo-grupo {
+  display: grid;
+  grid-template-rows: 85px 55px 55px 280px 100px;
+  gap: 3%;
+  margin-left: 25%;
+  margin-top: 8%;
+}
+
+/*Grid internas*/
+.grupo-interno {
+  display: grid;
+  grid-template-rows: 55px 15px;
+  grid-template-columns: auto auto;
+  gap: 7%;
+}
+
+.Obs1 {
+  margin-top: 7px;
+  font-family: "Kinetika Heavy book";
+}
+
+.seletor {
+  width: 100%;
+}
+
+.grupo-interno-arquivo {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #00bb99;
+}
+
+.entrada {
+  display: grid;
+  grid-template-rows: 140px 20px;
+  width: 100%;
+  height: 100%;
+}
+
+/*dados formulario*/
+.formulario-input-nome {
+  background-color: #00bb99;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+
+.formulario-input-email {
+  background-color: #00bb99;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+
+.formulario-input-switch {
+  background-color: #00bb99;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.display {
+  background-color: #00bb99;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  color: white;
+}
+
+.formulario-textarea {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: none;
+}
+/*botoes*/
+.button {
+  direction: rtl;
+}
+
+.button-selecionar-arquivo {
+  background-color: #009276;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  width: 20%;
+}
+
+.formulario-submit {
+  background-color: #009276;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  margin: 0%;
+  width: 17%;
+  height: 50%;
+  color: white;
+}
+
+/*relatos controle grid*/
+.historiasRelatos {
+  display: grid;
+  height: 15%;
+  padding: 4%;
+}
+
+.centralizarRetanguloVerdeGrande {
+  display: grid;
+  grid-template-rows: auto auto;
+  width: 100%;
+  height: 100%;
+}
+
+/*Titulo depoimento*/
+.tituloLaranja {
+  font-family: "Kinetika Heavy4";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.tituloLaranjaForte {
+  font-size: 3rem;
+  margin: 0%;
+  color: #ff8916;
+}
+
+.tituloLaranjaForte2 {
+  margin: 0%;
+  font-size: 3rem;
+  color: #ff8916;
+}
+
+.grossuraTitulo {
+  font-family: "Kinetika Heavy5";
+}
+
+/*Retangulo com depoimento e foto*/
+.retanguloVerdeGrandeRoot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.retanguloVerdeGrande {
+  display: grid;
+  height: 100%;
+  width: 75%;
+  border-radius: 10px;
+  background-color: #00bb99;
+  align-items: center;
+}
+
+.CentralizaFoto {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.fotoFuncionario {
+  position: absolute;
+  top: -130px;
+  width: 15%;
+}
+
+/*textos relato*/
+.orientacaoTextoGrande {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Kinetika Heavy book";
+  font-style: italic;
+  height: 30px;
+}
+
+.orientacaoTextoMenor {
+  text-align: center;
+  font-size: 30px;
+  color: #005f4d;
+  font-family: "Kinetika Heavy3";
+  font-style: italic;
+}
+
+/*Controle circulo*/
+.controleCirculo {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+/*elispe*/
+.elipse {
+  display: flex;
+  position: absolute;
+  height: 700%;
+  width: 200%;
+  left: -50%;
+  background-image: var(--degrade);
+  border-radius: 50%;
+}
+
+.CaixaIcones {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 7%;
+  margin-top: 3%;
+  margin-left: 34%;
+  margin-right: 34%;
+}
+
+/* Estilo para o conteúdo dentro dos ícones no footer */
+.iconeTextoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.textoIcones {
+  color: #ffffff;
+  font-family: "Number Fonte";
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fontFooter {
+  font-family: "Number Fonte";
+  font-size: 20px;
+}
+
+footer {
+  background-image: var(--degrade2);
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (min-width: 2560px) {
+  .top {
+    background-image: var(--degrade);
+    height: 24.52%;
+  }
+  .tituloSeta {
+    top:90%;
+    left: 37%;
+}
+  .fotoFuncionario {
+    position: absolute;
+    top: -180px;
+    width: 15%;
+  }
+  .textoSobreposto {
+    margin-top: 4%;
+  }
+  .espaçamento {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .imagemSeta {
+    top: 55%;
+    left: 20%;
+    width: 60%;
+  }
+
+  .tituloSeta {
+    top: 68%;
+    left: 30%;
+  }
+
+  .GridboxRoot {
+    height: 30%;
+  }
+  .boxRootMaiores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+  }
+
+  .boxMaior {
+    width: 300px;
+    height: 280px;
+    grid-template-columns: 300px;
+    grid-template-rows: 60px 60px 120px auto;
+  }
+
+  .boxRootMenor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 280px));
+    gap: 0%;
+  }
+
+  .boxMenor {
+    width: 260px;
+    height: 210px;
+    grid-template-columns: 260px;
+  }
+
+  .retanguloCidades {
+    width: 100px;
+    height: 25px;
+    font-size: 13px;
+  }
+  .retanguloCidadesVerde {
+    width: 100px;
+    height: 25px;
+    font-size: 13px;
+  }
+  .textoCirculoVerde,
+  .textoCirculoLaranja {
+    font-size: 2rem;
+  }
+
+  .textoRetanguloVerde {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .textoRetanguloCidades {
+    margin-top: 3px;
+    font-size: 13px;
+  }
+  .circuloLaranja,
+  .circuloVerde {
+    top: 0%;
+    left: 0%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .retanguloLaranja {
+    width: 100%;
+    height: 40px;
+  }
+  .retanguloVerde {
+    width: 100%;
+    height: 40px;
+  }
+  .textoBoxGrande {
+    font-size: 15px;
+  }
+  .textoRetanguloLaranja {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .espasador {
+    width: 100%;
+  }
+
+  /*Texto laranja*/
+  .espaçamento {
+    font-size: 14px;
+  }
+
+  .imagemDoHomem {
+    margin-left: 30%;
+  }
+  /*cadastro*/
+  .button-selecionar-arquivo {
+    width: 25%;
+  }
+  .formulario-submit {
+    width: 20%;
+  }
+
+  /*Retangulo com depoimento e foto*/
+  .retanguloVerdeGrande {
+    width: 80%;
+  }
+
+  .orientacaoTextoGrande {
+    font-size: 22px;
+  }
+  .fotoFuncionario {
+    top: -100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .imagemSeta {
+    top: 35%;
+    width: 70%;
+    left: 18%;
+  }
+
+  .tituloSeta {
+    top: 45%;
+    left: 30%;
+    font-size: 3.5rem;
+  }
+
+  /*Grid de oportunidades*/
+  .boxRootMaiores {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+  }
+
+  .boxRootMenor {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+    gap: 20px;
+  }
+
+  /*Historia*/
+  .topImagemLaranja {
+    height: 500px;
+  }
+
+  .imagemLaranja {
+    display: grid;
+    grid-template-columns: 400px 600px;
+    width: 100%;
+    height: 500px;
+  }
+
+  .imagemDoHomem {
+    width: 90%;
+  }
+
+  .textoSobreposto {
+    margin-top: 10%;
+    margin-right: 0%;
+  }
+
+  .titulo {
+    font-size: 30px;
+  }
+
+  .espaçamento {
+    font-size: 12px;
+  }
+
+  /*Grid cadastro*/
+  .cadastro {
+    height: 25%;
+  }
+  .tela-formulario {
+    grid-template-columns: 55% 40%;
+    height: 80%;
+    font-size: 16px;
+  }
+
+  .imagemDaMulher {
+    margin-top: 10%;
+    width: 100%;
+  }
+
+  .campo-grupo {
+    margin-left: 10%;
+  }
+
+  .button-selecionar-arquivo {
+    width: 28%;
+  }
+  .formulario-submit {
+    width: 22%;
+  }
+
+  .fotoFuncionario {
+    top: -100px;
+    width: 20%;
+  }
+  .orientacaoTextoGrande {
+    font-size: 18px;
+  }
+  .orientacaoTextoMenor {
+    font-size: 22px;
+  }
+
+  /* Estilo para o conteúdo dentro dos ícones no footer */
+  .CaixaIcones {
+    margin-top: 6%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*imagem e titulo seta*/
+  .tituloSeta {
+    top: 38%;
+    left: 0%;
+    padding: 0%28%0%28%;
+    font-size: 2.5rem;
+  }
+
+  .imagemSeta {
+    top: 30%;
+    width: 64%;
+    left: 0%;
+    padding: 0%18%0%18%;
+  }
+
+  .GridboxRoot {
+    grid-template-rows: 340px 340px;
+    margin-top: 0%;
+    padding: 20% 30% 30% 30%;
+    height: 15%;
+  }
+  .GridboxRoot2 {
+    grid-template-rows: 340px 340px;
+    margin-top: 0%;
+  }
+  .boxRootMaiores {
+    display: flex;
+    overflow: scroll;
+    height: 100%;
+    margin: 0%;
+    gap: 5%;
+  }
+
+  .boxRootMenor {
+    display: flex;
+    overflow: scroll;
+    height: 100%;
+    margin: 0%;
+  }
+  .boxMaior {
+    width: 300px;
+    height: 300px;
+    grid-template-columns: 300px;
+    grid-template-rows: 60px 60px 120px auto;
+  }
+  .boxMenor {
+    width: 300px;
+    height: 300px;
+    grid-template-columns: 300px;
+    grid-template-rows: 60px 60px 120px auto;
+  }
+
+  /*Quem somos*/
+  .imagemDoHomem {
+    display: none;
+  }
+  .imagemLaranja {
+    grid-template-columns: 100%;
+  }
+
+  .textoSobreposto {
+    position: absolute;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .titulo {
+    font-size: 30px;
+  }
+
+  .espaçamento {
+    font-size: 14px;
+  }
+
+  /*Grid cadastro*/
+  .tela-formulario {
+    grid-template-columns: 100%;
+  }
+
+  .campo-grupo {
+    margin: 0%;
+    padding: 5%;
+  }
+  /*botoes*/
+  .button {
+    width: 100%;
+    height: 60%;
+  }
+
+  .button-selecionar-arquivo {
+    width: 45%;
+  }
+
+  .formulario-submit {
+    width: 30%;
+    height: 78%;
+  }
+  .imagemDaMulher {
+    display: none;
+  }
+
+  .retanguloVerdeGrande {
+    width: 90%;
+  }
+  .fotoFuncionario {
+    top: -100px;
+    width: 25%;
+  }
+  .orientacaoTextoGrande {
+    font-size: 20px;
+  }
+  .orientacaoTextoMenor {
+    font-size: 20px;
+  }
+
+  /*Titulo depoimento*/
+  .tituloLaranjaForte {
+    font-size: 2rem;
+  }
+
+  .tituloLaranjaForte2 {
+    font-size: 2rem;
+  }
+  .CaixaIcones {
+    grid-gap: 5%;
+    margin-top: 9%;
+  }
+  .textoIcones {
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /*imagem e titulo seta*/
+  /*imagem e titulo seta*/
+  .tituloSeta {
+    top: 20%;
+    left: 0%;
+    padding: 0%15%0%15%;
+    font-size: 2rem;
+  }
+
+  .imagemSeta {
+    top: 14%;
+    width: 90%;
+    left: 0%;
+    padding: 0% 2%;
+  }
+
+  .GridboxRoot {
+    height: 25%;
+    padding: 30% 14% 20% 14%;
+  }
+
+  /*Historia*/
+  .topImagemLaranja {
+    width: 100%;
+    height: 600px;
+  }
+
+  .imagemLaranja {
+    height: 600px;
+  }
+
+  .titulo {
+    width: 100%;
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  .espaçamento {
+    font-size: 13px;
+  }
+  .retanguloVerdeGrande {
+    width: 90%;
+  }
+  .fotoFuncionario {
+    top: -60px;
+  }
+  .orientacaoTextoGrande {
+    font-size: 18px;
+  }
+  .orientacaoTextoMenor {
+    font-size: 18px;
+  }
+
+  /*Cadastro*/
+  .cadastro {
+    height: 25%;
+  }
+  .tituloCadastro {
+    padding: 2%;
+  }
+
+  .textoCadastro {
+    color: #ff8916;
+    font-size: 50px;
+    font-weight: 900;
+  }
+
+  .subcadCastro {
+    font: arial;
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+  /*Grid cadastro*/
+  .tela-formulario {
+    width: 100%;
+    font-size: 20px;
+  }
+  /*Titulo depoimento*/
+  .tituloLaranjaForte {
+    font-size: 1.5rem;
+  }
+
+  .tituloLaranjaForte2 {
+    font-size: 1.5rem;
+  }
+  /*elipse*/
+  .controleCirculo {
+    height: 10%;
+  }
+
+  .CaixaIcones {
+    grid-gap: 10px;
+    margin-top: 6%;
+  }
+
+  .elipse {
+    height: 1000px;
+  }
+  .textoIcones {
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 12px;
+  }
+  .iconeTextoContainer {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /*seta oportunidades*/
+  .imagemSeta {
+    top: 15%;
+    width: 90%;
+    left: 5%;
+  }
+
+  .tituloSeta {
+    top: 20%;
+    left: 20%;
+    font-size: 1.7rem;
+  }
+
+  .GridboxRoot {
+    width: 300px;
+    padding: 10%;
+    gap: 2%;
+  }
+
+  /*Box empregos*/
+  .boxRootMenor {
+    display: flex;
+    height: 300px;
+    justify-content: space-evenly;
+    overflow: scroll;
+  }
+
+  .boxRootMaiores {
+    display: flex;
+    height: 300px;
+    justify-content: space-evenly;
+    overflow: scroll;
+  }
+
+  .boxMaior,
+  .boxMenor {
+    width: 300px;
+    height: 300px;
+  }
+
+  .retanguloCidades,
+  .retanguloCidadesVerde {
+    width: 130px;
+    height: 30px;
+  }
+
+  .textoCirculoVerde,
+  .textoCirculoLaranja {
+    font-size: 3rem;
+  }
+
+  .textoRetanguloVerde {
+    font-size: 18px;
+  }
+
+  .textoRetanguloCidades {
+    font-size: 20px;
+  }
+
+  .textoRetanguloLaranja {
+    font-size: 18px;
+  }
+
+  .textoBoxGrande {
+    height: 110px;
+    font-size: 18px;
+  }
+
+  .textoBoxPequena {
+    height: 110px;
+    font-size: 18px;
+  }
+  .espasador {
+    width: 300px;
+  }
+
+  /*Historia*/
+  .topImagemLaranja {
+    height: 650px;
+  }
+
+  .imagemLaranja {
+    height: 650px;
+  }
+
+  .espaçamento {
+    font-size: 15px;
+  }
+  .formulario-submit {
+    width: 40%;
+  }
+
+  .textoCadastro {
+    font-size: 40px;
+  }
+
+  .subcadCastro {
+    font-size: 15px;
+  }
+
+  .campo-grupo {
+    margin: 0%;
+    padding: 5%;
+    gap: 2%;
+  }
+  .grupo-interno {
+    width: 100%;
+    height: 50%;
+  }
+  /*Titulo depoimento*/
+  .tituloLaranjaForte {
+    font-size: 1.2rem;
+  }
+
+  .tituloLaranjaForte2 {
+    font-size: 1.2rem;
+  }
+
+  .retanguloVerdeGrande {
+    width: 90%;
+    height: 70%;
+  }
+  .fotoFuncionario {
+    top: -60px;
+    width: 30%;
+  }
+  .orientacaoTextoGrande {
+    font-size: 16px;
+  }
+  .orientacaoTextoMenor {
+    font-size: 15px;
+  }
+  .CaixaIcones {
+    grid-gap: 10px;
+    margin-top: 6.5%;
+  }
+
+  .elipse {
+    height: 800px;
+  }
+  .textoIcones {
+    font-size: 10px;
+  }
+  .iconeTextoContainer {
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .imagemSeta {
+    top: 12%;
+    left: 5%;
+    width: 90%;
+  }
+
+  .tituloSeta {
+    top: 15%;
+    left: 22%;
+    font-size: 1.4rem;
+  }
+
+  .GridboxRoot {
+    margin-top: 25%;
+    width: 300px;
+    padding: 3%;
+  }
+
+  /*Historia*/
+  .topImagemLaranja {
+    margin-top: 4%;
+    height: 750px;
+  }
+
+  .imagemLaranja {
+    margin-top: 4%;
+    height: 750px;
+  }
+
+  .espaçamento {
+    font-size: 14px;
+  }
+
+  .cadastro {
+    width: 100%;
+    height: 25%;
+  }
+
+  .textoCadastro {
+    font-size: 30px;
+  }
+
+  .formulario-submit {
+    margin-top: 7%;
+  }
+
+  .retanguloVerdeGrande {
+    width: 90%;
+    height: 65%;
+  }
+  .fotoFuncionario {
+    top: -70px;
+    width: 35%;
+  }
+  .orientacaoTextoGrande {
+    font-size: 16px;
+  }
+  .orientacaoTextoMenor {
+    font-size: 16px;
+  }
+  .textoIcones {
+    font-size: 9px;
+  }
+}
